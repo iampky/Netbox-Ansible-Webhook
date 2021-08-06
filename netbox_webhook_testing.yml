@@ -7,7 +7,7 @@
   name: "Netbox Webhook Testing"
   tasks: 
     - 
-      cisco: 
+      dmi01-akron-rtr01: 
         config: 
           - 
             access: 
