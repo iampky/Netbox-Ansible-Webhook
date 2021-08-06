@@ -7,11 +7,12 @@
   name: "Netbox Webhook Testing"
   tasks: 
     - 
-      dmi01-akron-rtr01: 
+      ? "Cisco.ISR 1111-8P.GigabitEthernet0/0/0"
+      : 
         config: 
           - 
             access: 
               vlan: "{{ vlan_id }}"
             name: "{{ interface_id }}"
         state: replaced
-      name: "Nxos l2 Interface"
+      name: "ISR 1111-8P Interface"
