@@ -1,0 +1,17 @@
+--- 
+- 
+  connection: network_cli
+  gather_facts: false
+  hosts: 
+    - "{{ device_id }}"
+  name: "Netbox Webhook Testing"
+  tasks: 
+    - 
+      cisco.nxos.nxos_l2_interfaces: 
+        config: 
+          - 
+            access: 
+              vlan: "{{ vlan_id }}"
+            name: "{{ interface_id }}"
+        state: replaced
+      name: "Nxos l2 Interface"
