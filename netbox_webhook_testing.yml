@@ -7,7 +7,7 @@
   name: "Netbox Webhook Testing"
   tasks: 
     - 
-      cisco.nxos.nxos_l2_interfaces: 
+      nxos_l2_interfaces: 
         config: 
           - 
             access: 
